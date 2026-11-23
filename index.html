@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BLACKLINE DETAILING — премиальный уход за автомобилем. Демонстрационный сайт.">
+  <meta name="theme-color" content="#090a0d">
+  <title>BLACKLINE DETAILING — Детали решают всё</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="BLACKLINE — наверх">BLACKLINE<span>.</span><small>DETAILING STUDIO</small></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Навигация">
+      <a href="#about">О нас</a><a href="#services">Услуги</a><a href="#comparison">До / После</a><a href="#portfolio">Работы</a><a href="#contact">Запись</a>
+    </nav>
+    <a href="#contact" class="button header-cta">Записаться <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">01 / PREMIUM AUTO DETAILING</p>
+        <h1 id="hero-title">Эстетика.<br>Защита.<br><em>Совершенство.</em></h1>
+        <p class="hero-copy">Детейлинг для тех, кто замечает каждую деталь. Возвращаем автомобилю безупречный вид и сохраняем его надолго.</p>
+        <div class="hero-actions"><a class="button" href="#contact">Записаться на уход ↗</a><a class="text-link" href="#services">Смотреть услуги ↓</a></div>
+      </div>
+      <div class="hero-bottom container"><span>BLACKLINE / STUDIO</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="section intro container" id="about">
+      <p class="eyebrow reveal">02 / НАША ФИЛОСОФИЯ</p>
+      <div class="intro-layout"><h2 class="reveal">Не просто чистота.<br><span>Новый уровень ухода.</span></h2><div class="reveal"><p>Мы относимся к автомобилю как к произведению дизайна. Точные технологии, качественные материалы и внимание к каждой поверхности.</p><div class="stats"><div><strong>04</strong><span>направления ухода</span></div><div><strong>100%</strong><span>внимания к деталям</span></div></div></div></div>
+    </section>
+
+    <section class="section car-section" id="experience">
+      <div class="container"><p class="eyebrow reveal">03 / INTERACTIVE EXPERIENCE</p><h2 class="reveal">Автомобиль <span>в деталях.</span></h2><p class="muted reveal">Интерактивная 3D-модель: вращай мышкой или пальцем, а также прокручивай страницу — камера плавно изменит ракурс. Знакомьтесь с Porsche 911 Carrera 4S в интерактивном 3D.</p></div>
+      <div class="car-stage" id="car-stage">
+        <model-viewer id="real-car" src="porsche-911.glb" alt="Интерактивная 3D-модель Porsche 911 Carrera 4S" camera-controls auto-rotate rotation-per-second="12deg" shadow-intensity="1" exposure="1.3" environment-image="neutral" camera-orbit="35deg 70deg auto" interaction-prompt="none" loading="eager">
+          <div class="model-loading" slot="poster">ЗАГРУЖАЕМ 3D-АВТОМОБИЛЬ...</div>
+          <div class="model-error" slot="error">Не удалось загрузить 3D-модель. Проверь подключение к интернету.</div>
+        </model-viewer>
+        <div class="car-hint">↔ ВРАЩАЙ · ПРОКРУТКА — СМЕНА РАКУРСА</div>
+      </div>
+      <div class="container car-controls"><button class="outline-button" id="explode-btn" type="button">Остановить вращение ◼</button><button class="outline-button" id="reset-btn" type="button">Вернуть ракурс ↺</button></div>
+      <p class="demo-note container">3D-модель Porsche 911 Carrera 4S. Для загрузки библиотеки просмотра требуется интернет.</p>
+    </section>
+
+    <section class="section services-section container" id="services"><p class="eyebrow reveal">04 / ЧТО МЫ ДЕЛАЕМ</p><div class="section-heading reveal"><h2>Наши <span>услуги.</span></h2><p>Подберём уход под состояние и особенности вашего автомобиля.</p></div>
+      <div class="service-grid">
+        <article class="service reveal"><div class="service-top"><span>01 / EXTERIOR</span><span>↗</span></div><h3>Полировка кузова</h3><p>Восстанавливаем глубину цвета и зеркальный блеск покрытия.</p><div class="service-bottom"><strong>от 4 000 ₴</strong><a href="#contact" data-service="Полировка кузова">Выбрать услугу ↗</a></div></article>
+        <article class="service reveal"><div class="service-top"><span>02 / INTERIOR</span><span>↗</span></div><h3>Химчистка салона</h3><p>Глубокая очистка текстиля, кожи и труднодоступных деталей.</p><div class="service-bottom"><strong>от 3 500 ₴</strong><a href="#contact" data-service="Химчистка салона">Выбрать услугу ↗</a></div></article>
+        <article class="service reveal"><div class="service-top"><span>03 / CERAMIC</span><span>↗</span></div><h3>Керамическое покрытие</h3><p>Защитный слой и выразительный глянец лакокрасочного покрытия.</p><div class="service-bottom"><strong>от 6 000 ₴</strong><a href="#contact" data-service="Керамическое покрытие">Выбрать услугу ↗</a></div></article>
+        <article class="service reveal"><div class="service-top"><span>04 / PPF</span><span>↗</span></div><h3>Защитная плёнка</h3><p>Помогает защитить уязвимые зоны кузова от сколов и царапин.</p><div class="service-bottom"><strong>от 12 000 ₴</strong><a href="#contact" data-service="Защитная плёнка">Выбрать услугу ↗</a></div></article>
+      </div><p class="demo-note">Цены примерные, для демонстрации. Финальная стоимость зависит от автомобиля и объёма работ.</p>
+    </section>
+
+    <section class="section comparison-section" id="comparison"><div class="container"><p class="eyebrow reveal">05 / РЕЗУЛЬТАТ</p><h2 class="reveal">Разницу <span>видно сразу.</span></h2><p class="muted reveal">Проведи ползунок вправо — и смотри, как грязный автомобиль превращается в чистый.</p>
+      <div class="comparison reveal" id="comparison-widget" style="--split:0%"><img class="comparison-after" src="before.jpg" alt="Грязный автомобиль до детейлинга"><div class="comparison-before"><img src="after.jpg" alt="Чистый автомобиль после детейлинга"></div><span class="compare-label before-label">ПОСЛЕ</span><span class="compare-label after-label">ДО</span><div class="compare-line" aria-hidden="true"><span>↔</span></div><input id="compare-range" type="range" min="0" max="100" value="0" aria-label="Сравнить грязный и чистый автомобиль"></div>
+      <p class="demo-note">Изображения сгенерированы для демонстрации. Это не реальные фотографии выполненной работы студии.</p>
+    </div></section>
+
+    <section class="section portfolio-section container" id="portfolio"><p class="eyebrow reveal">06 / ГАЛЕРЕЯ</p><div class="section-heading reveal"><h2>Автомобили <span>в фокусе.</span></h2><p>Подборка демонстрационных фотографий для презентации дизайна.</p></div>
+      <div class="portfolio-grid"><figure class="portfolio-card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Спортивный автомобиль"><figcaption>01 / EXTERIOR DETAILING</figcaption></figure><figure class="portfolio-card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85" alt="Премиальный автомобиль"><figcaption>02 / PREMIUM FINISH</figcaption></figure><figure class="portfolio-card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=1200&q=85" alt="Автомобиль на дороге"><figcaption>03 / PAINT PROTECTION</figcaption></figure></div>
+    </section>
+
+    <section class="section contact-section" id="contact"><div class="container contact-layout"><div class="reveal"><p class="eyebrow">07 / ЗАПИСЬ</p><h2>Готовы увидеть<br><span>разницу?</span></h2><p class="muted">Оставьте заявку — в демонстрационной версии она сохранится только в вашем браузере. Для реальных заявок необходимо подключить сервер.</p><div class="contact-points"><span>Премиальный уход</span><span>Индивидуальный подход</span><span>Внимание к деталям</span></div></div>
+      <form class="booking-form reveal" id="booking-form"><h3>Записаться на услугу</h3><label for="client-name">Ваше имя</label><input id="client-name" name="name" autocomplete="name" required maxlength="80" placeholder="Как к вам обращаться?">
+        <label for="client-phone">Телефон</label><input id="client-phone" name="phone" type="tel" autocomplete="tel" required minlength="7" maxlength="25" placeholder="+380 XX XXX XX XX">
+        <label for="client-service">Услуга</label><select id="client-service" name="service" required><option value="">Выберите услугу</option><option>Полировка кузова</option><option>Химчистка салона</option><option>Керамическое покрытие</option><option>Защитная плёнка</option><option>Консультация</option></select>
+        <label for="client-comment">Комментарий (необязательно)</label><textarea id="client-comment" name="comment" maxlength="500" rows="3" placeholder="Марка автомобиля, пожелания"></textarea>
+        <label class="consent"><input type="checkbox" id="client-consent" required><span>Я согласен(на) на локальное сохранение введённых данных для демонстрации. <a href="#privacy">Подробнее</a>.</span></label>
+        <button class="button submit-button" type="submit">Создать демо-заявку ↗</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        <a id="telegram-share" class="outline-button telegram-share" href="#" target="_blank" rel="noopener noreferrer" hidden>Отправить текст заявки через Telegram ↗</a>
+      </form></div></section>
+
+    <section class="privacy-section container" id="privacy"><details><summary>Информация о конфиденциальности демоверсии</summary><p>Данные формы сохраняются только в localStorage вашего браузера и не передаются владельцу сайта автоматически. Не вводите настоящие персональные данные при тестировании. Кнопка Telegram открывает интерфейс отправки подготовленного сообщения; отправка выполняется только после вашего подтверждения в Telegram. Для коммерческого запуска необходимы актуальная политика конфиденциальности, реальные контакты и безопасный серверный обработчик заявок.</p><button type="button" class="clear-data" id="clear-data">Удалить локальные демо-заявки</button></details></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#top">BLACKLINE<span>.</span><small>DETAILING STUDIO</small></a><span>© 2026 BLACKLINE DETAILING · DEMO CONCEPT</span><a href="#top">НАВЕРХ ↑</a></div></footer>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
